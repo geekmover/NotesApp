@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/size_padding_16"
+    android:paddingRight="@dimen/size_padding_16"
+    android:paddingLeft="@dimen/size_padding_16">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_add_title"
+        android:text="@string/txt_title_new_note"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:lineSpacingExtra="8sp"/>
+
+    <EditText
+        android:id="@+id/edt_new_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="Enter your note!"
+        android:inputType="textCapSentences|textMultiLine"
+        android:lines="4"
+        android:textColorHint="#A79F9F"
+        android:background="@android:color/transparent"/>
+
+</LinearLayout>
