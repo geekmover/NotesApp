@@ -22,6 +22,7 @@ import java.util.List;
 import id.code.notesapp.R;
 import id.code.notesapp.database.DatabaseHelper;
 import id.code.notesapp.database.model.Note;
+import id.code.notesapp.utils.RecyclerTouchListener;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -70,6 +71,25 @@ public class MainActivity extends AppCompatActivity {
         rv_listnote.setAdapter(notesAdapter);
 
         toggleEmptyNote();
+
+        // Step 14: Menambahkan Package baru di project package java dengan nama utils
+        //          kemudian tambahkan file class RecyclerTouchListener.java didalam package
+        //          utils yang sudah kita buat tadi
+
+        // Step 5: Menambahkan Action Click pada List RecyclerView data yang Ada (OnClick)
+
+        rv_listnote.addOnItemTouchListener(new RecyclerTouchListener(
+                this, rv_listnote, new RecyclerTouchListener.ClickListener() {
+            @Override
+            public void onClick(View view, int position) {
+
+            }
+
+            @Override
+            public void onLongClick(View view, int poisiton) {
+
+            }
+        }));
 
     }
 

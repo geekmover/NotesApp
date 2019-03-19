@@ -15,7 +15,7 @@
         android:layout_height="30dp"
         android:id="@+id/dot"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="8.5dp"
+        android:layout_marginTop="9dp"
         android:includeFontPadding="false"
         android:textColor="@color/colorAccent"
         android:lineSpacingExtra="0dp"
@@ -41,6 +41,5 @@
             android:textSize="18sp" />
 
     </LinearLayout>
-
 
 </LinearLayout>
