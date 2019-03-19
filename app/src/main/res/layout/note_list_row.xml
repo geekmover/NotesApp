@@ -15,7 +15,7 @@
         android:layout_height="30dp"
         android:id="@+id/dot"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="5.5dp"
+        android:layout_marginTop="8.5dp"
         android:includeFontPadding="false"
         android:textColor="@color/colorAccent"
         android:lineSpacingExtra="0dp"
