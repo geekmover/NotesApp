@@ -78,15 +78,17 @@ public class MainActivity extends AppCompatActivity {
 
         // Step 5: Menambahkan Action Click pada List RecyclerView data yang Ada (OnClick)
 
-        rv_listnote.addOnItemTouchListener(new RecyclerTouchListener(
-                this, rv_listnote, new RecyclerTouchListener.ClickListener() {
+        // Tahapan 8: Mengimplementasikan OnClick Listener di RecyclerView
+
+        rv_listnote.addOnItemTouchListener(new RecyclerTouchListener(this,
+                rv_listnote, new RecyclerTouchListener.ClickListener() {
             @Override
             public void onClick(View view, int position) {
 
             }
 
             @Override
-            public void onLongClick(View view, int poisiton) {
+            public void onLongClick(View view, int position) {
 
             }
         }));
